@@ -1,0 +1,82 @@
+
+header{
+    background-color: #cccccc;
+    padding: 20px 0;
+}
+
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 130px;   
+    right: 0;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+
+.deLado{
+    float: left;
+    width: auto;    
+}
+
+.centrado{
+    display: flex;
+    justify-content: center;
+}
+
+.galeria{
+    margin: 5px;
+    border: 1px solid black;
+    float: left;
+    width: 33vw;
+}
+
+div.galeria img{
+    width: 100%;
+    height: auto;
+}
+
+.descripcion{
+    padding: 25px;
+    text-align: center;   
+    font-weight: bold;
+}
+
+.precio{
+    color: grey;
+    margin: 0 0 20px 10px;
+}
+
+input[type="submit"]{
+    width: 80%;
+    background-color: red;
+    color: white;
+    padding: 10px 10px;
+    margin: 0 0 10px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
