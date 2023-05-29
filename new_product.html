@@ -7,39 +7,52 @@
     <meta name="viewport" content="width=device-width">
     <title>New Product </title>
     <link rel="shortcut icon" href="imagenes/logo.jpg">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/form.js"></script>
 </head>
 
 <body>
     <header>
-     <div class="caja">
-        <h1><img src="imagenes/logo.jpg" alt="logo de the store"></h1>
-        <nav>
-            <ul>
-                <li><a href="index.html"> Home </a></li>
-                <li><a href="Product.html"> Product </a></li>
-                <li><a href="car.html"> Car </a></li>
-                <li><a href="login.html"> Login </a></li>
-                <li><a href="new_product.html"> New Product</a></li>
-            </ul>
-        </nav>
+        <div class="caja">
+            <h1><img src="imagenes/logo.png" alt="logo de the store"></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html"> Product </a></li>
+                    <li><a href="car.html"> Car </a></li>
+                    <li><a href="login.html"> Login </a></li>
+                    <li><a href="new_product.html"> New Product</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <form >
+            <p class="titulo">New Product<p>
+            <div class="form-input name">
+                <label for="name">Name:</label>
+               <br>
+                <input type="text" id="name" placeholder="Ingresa el nombre:" >
+        
+            </div>
+            <div class="form-input price">
+                <label for="price">Price:</label>
+                <br>
+                <input type="number" id="price" placeholder="Ingresa el precio:" >
+        
+            </div>
+            <div class="form-input inventory">
+                <label for="inventory">Inventory:</label>
+                <br>
+                <input type="number" id="inventory" placeholder="ingresa el inventario:" >
+            </div>
+            <div>
+                <input type="submit" value="Create Product" class="enviar">
+            </div>
+        </form>
     </div>
-</header>
 
-<main class="formulario">
-    <form>
-        <label for="name"> Name </label>
-        <input type="text" id="name" class="input-padre" placeholder="Alejandro Munoz" required>
-
-        <label for="price"> Price </label>
-        <input type="number" id="price" class="input-padre" placeholder="1223443" required>
-
-        <label for="inventory"> Inventory </label>
-        <input type="number" id="inventory" class="input-padre" placeholder="1234567" required>
-
-        <input type="submit" value="Create Product" class="enviar">
-    </form>
-</main>
     
+
 </body>
 </html>
