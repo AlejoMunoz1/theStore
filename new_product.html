@@ -3,15 +3,19 @@
 <html lang="es">
 
 <head>
+    <!--Metadatos-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <title>New Product </title>
-    <link rel="shortcut icon" href="imagenes/logo.jpg">
+    <!--Titulo-->
+    <title>The Store</title>
+    <!--Favicon-->
+    <link rel="shortcut icon" href="imagenes/logo.png">
+    <!--Añadir archivo CSS-->
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/form.js"></script>
 </head>
 
 <body>
+    <!--Barra de navegacion-->
     <header>
         <div class="caja">
             <h1><img src="imagenes/logo.png" alt="logo de the store"></h1>
@@ -25,34 +29,37 @@
             </nav>
         </div>
     </header>
-
+    <!--Formulario-->
     <div class="container">
-        <form >
-            <p class="titulo">New Product<p>
-            <div class="form-input name">
+        <form id="productForm">
+            <p class="titulo">New Product
+            <p>
+            <div class="form-input">
                 <label for="name">Name:</label>
-               <br>
-                <input type="text" id="name" placeholder="Ingresa el nombre:" >
-        
+                <br>
+                <input type="text" id="name" placeholder="Ingresa el nombre:">
+                <span id="nameError" class="error"></span>
             </div>
-            <div class="form-input price">
+            <div class="form-input ">
                 <label for="price">Price:</label>
                 <br>
-                <input type="number" id="price" placeholder="Ingresa el precio:" >
-        
+                <input type="number" id="price" placeholder="Ingresa el precio:">
+                <span id="priceError" class="error"></span>
             </div>
-            <div class="form-input inventory">
+            <div class="form-input ">
                 <label for="inventory">Inventory:</label>
                 <br>
-                <input type="number" id="inventory" placeholder="ingresa el inventario:" >
+                <input type="number" id="inventory" placeholder="ingresa el inventario:">
+                <span id="inventoryError" class="error"></span>
             </div>
             <div>
-                <input type="submit" value="Create Product" class="enviar">
+                <button class="botones">Add car</button>
             </div>
         </form>
     </div>
 
-    
 
+    <script src="js/form.js"></script>
 </body>
+
 </html>
