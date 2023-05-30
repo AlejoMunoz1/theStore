@@ -49,5 +49,5 @@ function validateForm(event) {
   document.getElementById('productForm').addEventListener('submit', validateForm);
   
   function mostrarAlerta() {
-    alert("¡Producto Creado!");
+    alert("¡Producto añadido!");
   }
