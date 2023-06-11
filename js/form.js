@@ -8,41 +8,44 @@ function validateForm(event) {
     document.getElementById('inventoryError').textContent = '';
   
     // Obtener los valores de los campos
-    var name = document.getElementById('name').value;
-    var price = document.getElementById('price').value;
-    var inventory = document.getElementById('inventory').value;
+    const name = document.getElementById('name').value;
+    const price = document.getElementById('price').value;
+    const inventory = document.getElementById('inventory').value;
+
+    let result = true
   
     // Validar los campos
     if (name.trim() === '') {
       document.getElementById('nameError').textContent = 'Por favor, ingresa un nombre';
-      return false;
+      result = false;
     }
   
     if (price.trim() === '') {
       document.getElementById('priceError').textContent = 'Por favor, ingresa un precio.';
-      return false;
+      result = false;
     }
   
     if (isNaN(price) || price <= 0) {
       document.getElementById('priceError').textContent = 'Por favor, ingresa un precio válido.';
-      return false;
+      result = false;
     }
   
     if (inventory.trim() === '') {
       document.getElementById('inventoryError').textContent = 'Por favor, ingresa una cantidad de inventario.';
-      return false;
+      result = false;
     }
   
     if (isNaN(inventory) || inventory < 0) {
       document.getElementById('inventoryError').textContent = 'Por favor, ingresa una cantidad de inventario válida.';
-      return false;
+      result = false;
+    }
+    // Si todo es válido, se puede realizar alguna acción adicional aquí, como enviar el formulario al servidor
+    
+    if (result) {
+      alert('¡Producto creado!');
     }
   
-    // Si todo es válido, se puede realizar alguna acción adicional aquí, como enviar el formulario al servidor
-  
-    alert('¡Producto creado!');
-  
-    return true;
+    return result;
   }
   
   // Agregar el evento 'submit' al formulario
